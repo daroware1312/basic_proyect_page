@@ -1,0 +1,433 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/photo-1660855552442-1bae49431379.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+} 
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links ul li::after{
+    content:'';
+    width:0;
+    height:3px;
+    background: #fff;
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
+}
+
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.calltoaction{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+    flex-grow: 1;
+    transition: 0.5s;
+}
+.calltoaction:hover{
+    border:1px solid #000080;
+    background: #000080;
+    transition: 1s;
+    flex-grow: 4;
+    font-size: 18px;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+/* necesito arreglar el display del hover line */
+}
+
+/* servicios */
+
+.servicios{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600px;
+}
+p{
+    color:#000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight: 400px;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin:5%;
+    display: flex;
+    justify-content: space-between;
+}
+.servicio-columna{
+    flex-basis:31%;
+    background: #000080;
+    margin-bottom: 5%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #fff;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+}
+.servicio-columna p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+
+}
+
+.servicio-columna:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    .video{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* contenido */
+.video{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.video-columna{
+    width:40%;
+    margin:auto;
+    padding-top:80px;
+    padding-bottom: 50px;
+}
+.video-columna h1{
+    padding-top: 0;
+    margin-left: 6px;
+}
+
+/* nosotros */
+
+.nosotros{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+.nosotros-columna{
+    flex-basis:31%;
+    background: #000080;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.nosotros-columna h3{
+    color:#fff;
+}
+
+.iconos{
+    filter:invert(1);
+}
+
+.nosotros-columna:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+
+/* opiniones */
+
+.opiniones{
+    width:100%;
+    margin: auto;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.opiniones-columna{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #000080;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 180PX;
+}
+.opiniones-columna img{
+    height:60px;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+.opiniones-columna p{
+    padding: 0;
+    color:#fff;
+}
+.opiniones-columna h3{
+    margin-top: 15px;
+    text-align: left ;
+    color:#fff;
+}
+@media(max-width: 700px){
+    .opiniones-columna img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/* contacto */
+
+.contacto{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)),url(img/compudiagnosticos.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color:#fff;
+}
+
+.contacto h1{
+    color:#fff;
+    margin:40px;
+    padding:0;
+}
+
+@media(max-width: 700px){
+    .contacto h1{
+font-size: 20px;
+    }
+}
+
+/* sobre nosotros pie */
+.pie{
+    width:100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.pie h4{
+    margin-bottom:25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif
+}
+.icons .fa-brands{
+    color:#000080;
+    margin:0 13px;
+    cursor: pointer;
+    padding:18px 0;
+}
+
+/* sobre nosotros */
+.sub-header{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/hardwareporn.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.about-us{
+    width:80%;
+    margin:auto;
+    padding-top:80px;
+    padding-bottom: 50px;
+}
+.about-columna{
+    flex-basis: 48%;
+    padding:30px 2px;
+}
+
+.about-columna img{
+    width:100%;
+}
+.about-columna h1{
+    padding-top: 0;
+}
+.about-columna p{
+    padding: 15px 0 25px;
+}
+.blue-btn{
+    border: 1px solid #0d5ebbd7;
+    background: transparent;
+    color:#0d5ebbd7;
+}
+.blue-btn:hover{
+    color:#fff;
+}
+
+/* servicios */
+
+.sub-header-serv{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/radeon.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+}
+
+.sub-header-serv h1{
+    margin-top: 100px;
+}
+.servicios{
+    width:80%;
+    margin:auto;
+    padding-top:80px;
+    padding-bottom: 0px;
+}
+.servicios-columna{
+    box-sizing: border-box;
+    flex-basis: 48%;
+    padding:40px 4px;
+    margin: 25px;
+}
+
+.servicios-columna h1{
+    padding-top: 0;
+}
+.servicio-columna p{
+    padding: 15px 0 25px;
+}
+
+/* contacto */
+.sub-header-contact{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/compudiagnosticos.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+
+}
+
+.sub-header-contact h1{
+    margin-top: 100px;
+}
+
+.contact-container{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-titulo h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom:5px;
+}
+.contact-titulo hr{
+    border: none;
+    width:845px;
+    height:5px;
+    background-color: #000080;
+    margin-bottom: 20px;
+}
+
+.contacto-input{
+    width:400px;
+    height: 50px;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+}
+.contacto-input:focus{
+    border: 2px solid #000080;
+}
+.enviar{
+    margin-left:400px;
+    width: 50px;
+    height: 30px;
+}
